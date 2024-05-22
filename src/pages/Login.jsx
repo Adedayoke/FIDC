@@ -35,7 +35,7 @@ const Login = () => {
             </div>
             <br />
           </form>
-          <button onClick={()=> setPage()} className="pry_btn">Login</button>
+          <button onClick={()=> setPage()} className="pry_btn">Submit</button>
         </div>
       {/* </div> */}
     </div>

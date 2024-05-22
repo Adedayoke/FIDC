@@ -22,11 +22,13 @@
     padding: 10px;
     width: 80%;
     border: none;
+    outline: none;
 }
 .signup .inputSection input{
     padding: 10px;
     width: 80%;
     border: none;
+    outline: none;
 }
 .icon{
     width: 20%;

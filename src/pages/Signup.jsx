@@ -80,7 +80,7 @@ const Signup = () => {
           <br />
         </form>
         <button onClick={() => setPage()} className="pry_btn">
-          Signup
+          Submit
         </button>
       </div>
       {/* </div> */}

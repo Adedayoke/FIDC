@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./styles.css";
 import { AuthUserContext } from "../Context/AuthUserContext";
-import { Link } from "react-router-dom";
+import { Link, useHref } from "react-router-dom";
 
 const SideBar = () => {
   const { userLoggedIn } = useContext(AuthUserContext);
   console.log(userLoggedIn)
-  const [currentPage, setCurrentPage] = useState("dashboard");
-
+  const Cpage = useHref();
+  const [currentPage, setCurrentPage] = useState(Cpage.slice(1));
   const setPage = (page) => {
     setCurrentPage(page);
   };
@@ -19,8 +19,8 @@ const SideBar = () => {
       </div>
       <ul>
         {userLoggedIn && <li
-          onClick={() => setPage("dashboard")}
-          className={currentPage === "dashboard" ? "activepage" : ""}
+          onClick={() => setPage("")}
+          className={currentPage === "" ? "activepage" : ""}
         >
           <Link to="/">Dashboard</Link>
         </li>}
