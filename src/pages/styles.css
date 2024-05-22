@@ -1,0 +1,78 @@
+.login, .signup{
+    height: 100vh;
+    margin-left: 20%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+}
+.login .inputSection{
+    display: flex;
+    border: 1px solid black;
+    width: 60%;
+}
+.signup .inputSection{
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+}
+.login .inputSection input{
+    padding: 10px;
+    width: 80%;
+    border: none;
+}
+.signup .inputSection input{
+    padding: 10px;
+    width: 80%;
+    border: none;
+}
+.icon{
+    width: 20%;
+    background-color:#2ccb6f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.loginCont, .signupCont{
+    width: 50%;
+    text-align: center;
+}
+.login form{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.signup form{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signup .left{
+    flex-basis: 48%;
+}
+.signup .right{
+    flex-basis: 48%;
+}
+.login h1, .signup h1{
+    margin-bottom: 50px;
+}
+.pry_btn{
+    width: 60%;
+    padding: 10px;
+    background-color: #2ccb6f;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.signup .pry_btn{
+    margin-top: 10px;
+}

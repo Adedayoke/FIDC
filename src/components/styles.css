@@ -1,0 +1,42 @@
+.sidebar{
+    height: 100%;
+    width: 20%;
+    background-color: #34495e;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+.sidebar h1{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #2ccb6f;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+
+}
+li:hover{
+    background-color: rgba(38, 53, 66, .4);
+}
+.activepage{
+    background-color: #263542;
+}
