@@ -1,4 +1,4 @@
-.login, .signup{
+.login, .signup, .payment{
     height: 100vh;
     margin-left: 20%;
     width: 80%;
@@ -14,17 +14,22 @@
     width: 80%;
     font-family: "Open Sans", sans-serif;
 }
-.login .inputSection{
+.login .inputSection {
     display: flex;
     border: 1px solid #34495e;
     width: 60%;
+}
+.payment .inputSection{
+    display: flex;
+    border: 1px solid #34495e;
+    width: 100%;
 }
 .signup .inputSection{
     display: flex;
     border: 1px solid #34495e;
     width: 100%;
 }
-.login .inputSection input{
+.login .inputSection input, .payment .inputSection input{
     padding: 10px;
     width: 80%;
     border: none;
@@ -44,11 +49,11 @@
     justify-content: center;
     color: white;
 }
-.loginCont, .signupCont{
+.loginCont, .signupCont, .paymentCont{
     width: 50%;
     text-align: center;
 }
-.login form{
+.login form, .payment form{
     padding: 10px;
     width: 100%;
     display: flex;
@@ -69,7 +74,7 @@
 .signup .right{
     flex-basis: 48%;
 }
-.login h1, .signup h1{
+.login h1, .signup h1, .payment h1{
     margin-bottom: 50px;
 }
 .pry_btn{
@@ -104,9 +109,11 @@
 .dashboardCont{
     height: 100%;
     padding-top: 50px;
+    overflow: hidden;
 }
 .sectionCont{
     height: 62%;
+    padding-top: 10px;
 }
 .section{
     background-color: #2ccb6f;
@@ -121,4 +128,30 @@
 }
 .dashboard ul li:hover {
     background-color: rgba(44, 203, 111, .7);
+}
+.payment .otherdet{
+    display: flex;
+    width: 60%;
+}
+.payment .otherdet{
+    display: flex;
+    width: 60%;
+}
+.payment .otherdet div{
+    width: 50%;
+}
+.payment .otherdet .inputSection{
+    width: 95%; 
+}
+/* .payment .otherdet .inputSection input{
+    width: 100%; 
+} */
+.payment form label{
+    display: block;
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+}
+.payment form .inpt{
+   width: 60%;
 }
