@@ -155,3 +155,12 @@
 .payment form .inpt{
    width: 60%;
 }
+.payment h1{
+   display: flex;
+   align-items: center;
+}
+.payment h1 span{
+    color: #2ccb6f;
+    font-size: 40px;
+    margin-right: 10px;
+}

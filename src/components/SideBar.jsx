@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./styles.css";
 import { AuthUserContext } from "../Context/AuthUserContext";
 import { Link, useHref } from "react-router-dom";
@@ -8,6 +8,9 @@ const SideBar = () => {
   console.log(userLoggedIn)
   const Cpage = useHref();
   const [currentPage, setCurrentPage] = useState(Cpage.slice(1));
+  useEffect(()=>{
+      setCurrentPage(Cpage.slice(1));
+  }, [Cpage])
   const setPage = (page) => {
     setCurrentPage(page);
   };

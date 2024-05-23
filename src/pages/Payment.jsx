@@ -15,9 +15,8 @@ const Payment = () => {
   return (
     <div className="payment">
       {/* <div className="PaymentCont"> */}
-      <h1>Full time Undergraduate Student</h1>
+      <h1><span><GiPadlock/></span> PAYMENT</h1>
       <div className="paymentCont">
-        <h2>PAYMENT</h2>
         <form action="">
           <div className="inpt">
           <label htmlFor="">CARDHOLDER'S NAME</label>
