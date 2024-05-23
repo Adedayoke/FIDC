@@ -3,14 +3,14 @@ import "./styles.css";
 import { FaUserAlt } from "react-icons/fa";
 import { GiPadlock } from "react-icons/gi";
 import { AuthUserContext } from "../Context/AuthUserContext";
-import { Navigate, useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const Login = () => {
   const {setuserLoggedIn} = useContext(AuthUserContext);
   const navigate = useNavigate();
   const setPage = ()=>{
-    setuserLoggedIn(true)
-    navigate("/")
+    setuserLoggedIn(true);
+    navigate("/");
   }
   return (
     <div className="login">
