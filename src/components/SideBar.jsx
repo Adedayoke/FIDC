@@ -15,8 +15,11 @@ const SideBar = () => {
     setCurrentPage(page);
   };
 
+  const [viewSidebar, setViewSideBar] = useState(true)
   return (
-    <div className="sidebar">
+    <>
+    <div onClick={()=> setViewSideBar((v)=> !v)} className="ham"> Ham</div>
+    <div className={viewSidebar ? "sidebar none": "sidebar block"}>
       <div className="logo">
         <h1>FIDC</h1>
       </div>
@@ -47,7 +50,9 @@ const SideBar = () => {
         </li>}
       </ul>
     </div>
+    </>
   );
 };
 
 export default SideBar;
+

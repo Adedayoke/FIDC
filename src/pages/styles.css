@@ -93,8 +93,16 @@
 .dashboardCont .header{
     display: flex;
     align-items: center;
+    gap: 10px;
     padding: 0 50px ;
-    
+}
+.dashboardCont .header .left{
+    background-color: red;
+    height: 250px;
+    width: 250px;
+    flex-basis: 25%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .dashboard ul{
     display: flex;
@@ -123,8 +131,9 @@
     background-color: #2ccb6f;
 }
 .dashboard .header img{
-    border-radius: 50%;
     margin-right: 10px;
+    height: 100%;
+    width: 100%;
 }
 .dashboard ul li:hover {
     background-color: rgba(44, 203, 111, .7);
@@ -163,4 +172,23 @@
     color: #2ccb6f;
     font-size: 40px;
     margin-right: 10px;
+}
+@media (max-width: 720px) {
+    .login, .signup, .payment, .dashboard{
+        width: 100%;
+        margin-left: 0;
+    }
+    .dashboardCont .header{
+       flex-direction: column;
+       justify-content: space-between;
+       height: 40%;
+       text-align: center;
+       margin-bottom: 0;
+    }
+    .dashboardCont .header .left{
+        flex-basis: 80%;
+        height: 50%;
+        height: 200px;
+        width: 200px;
+    }
 }

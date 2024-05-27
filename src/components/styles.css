@@ -40,3 +40,25 @@ li:hover{
 .activepage{
     background-color: #263542;
 }
+.ham{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+.block{
+    display: block;
+}
+@media (max-width: 720px) {
+    .none{
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .ham{
+        display: block;
+    }
+}
